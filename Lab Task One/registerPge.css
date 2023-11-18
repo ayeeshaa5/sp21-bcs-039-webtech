@@ -1,0 +1,11 @@
+#pageheader {
+    background-color: rgb(6, 6, 74);
+    padding: 20px; 
+}
+
+.logo {
+    margin-top: 10px; 
+    margin-left: 10px; 
+    height: 100px;
+    width: 100px; 
+}

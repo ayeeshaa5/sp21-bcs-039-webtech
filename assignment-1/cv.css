@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    
+}
+.skil{
+    color : white;
+    font-weight: 600;
+}
+.myimg {
+    width: 70px;
+    height: 70px; 
+    border-radius: 50%;
+}
+.profile-bio{
+    font-weight: 50px;
+    font-style: normal;
+    font-size: 15px;
+    padding: 10px;
+    
+}
+
+.buttons{
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(162, 159, 159);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    
+    
+}
+.buttons:hover{
+    
+    opacity: 0.6;
+    color: black;
+    border: 1px solid black;
+}
+.socials{
+    font-weight: 600;
+}
+.list{
+    padding: 10px;
+}
+.lists{
+    padding: 5px;
+}
+
+
+.resume {
+    display: flex;
+    height: 700px;
+    margin: 20px auto;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-left {
+    padding: 20px;
+    background-color: rgb(113, 113, 216);
+    color: #fff;
+}
+
+.resume-profile i {
+    font-size: 100px;
+}
+.resume-right{
+    border-color: black;
+    border-width: 10px;
+    margin-left: 15px;
+}
+
+.resume-content {
+    padding: 20px;
+}
+
+.title p {
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.item-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+h2.intro{
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    
+    font-family: Arial, sans-serif;
+
+}
+
+.item-info li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+    min-width: 30px;
+}
+
+.item-skills {
+    margin-top: 20px;
+}
+
+.item-skills .bold {
+    margin-bottom: 10px;
+}
+
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-label {
+    flex: 1;
+   
+    font-family: 'Arial', sans-serif;
+}
+
+.progress-bar {
+    flex: 2;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 60%; 
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 15px;
+}
+.data{
+    display:inline;
+}
+.interests {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.icon-container {
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Style the icons */
+.fa-icon {
+    font-size: 36px;
+}

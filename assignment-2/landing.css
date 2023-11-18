@@ -1,0 +1,23 @@
+
+#pageheader{
+    background-color: rgb(6, 6, 74);
+}
+body.dark-mode {
+    background-color: #10141b;
+    color: rgb(13, 12, 12);
+  }
+.logo{
+    margin-top: -17px;
+    margin-left: 10px;
+    float: left;
+    height:150px;
+    width: 150px;
+    
+}
+ .butn{
+    margin-bottom: 8px;
+    width: 90px;
+}
+.buttn{
+    margin-bottom: 8px;
+}
