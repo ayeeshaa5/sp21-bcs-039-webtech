@@ -1,6 +1,6 @@
 import { combineReducers } from "@reduxjs/toolkit";
 
-import userSlice from "./postSlice";
+import userSlice from "./userSlice";
 import postSlice from "./postSlice";
 import themeSlice from "./theme"
 

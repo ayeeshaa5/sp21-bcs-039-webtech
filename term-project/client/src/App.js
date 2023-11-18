@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import ResetPassword from './pages/ResetPassword';
 import Login from './pages/Login'; 
 
+
 import {useSelector} from 'react-redux';
 
 import {Outlet, Navigate, Route, Routes, useLocation} from 'react-router-dom';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
 
         <Route path="/reset-password" element={<ResetPassword/>} />
+        <Route path="/home" element={<Home/>} />
 
       </Routes>
       
