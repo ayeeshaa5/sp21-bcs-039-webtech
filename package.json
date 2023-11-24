@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.7"
+    "@reduxjs/toolkit": "^1.9.7",
+    "moment": "^2.29.4"
   }
 }
