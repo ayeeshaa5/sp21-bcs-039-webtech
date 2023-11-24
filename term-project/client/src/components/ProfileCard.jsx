@@ -67,9 +67,9 @@ const ProfileCard = ({user}) => {
                 </p>
                 <div className='flex items-center justify-between '>
                     <span className='text-ascent-2'>
-                        Who viewed your profile
+                        Who viewed your profile</span>
                         <span className='text-ascent-1 text-lg '>{user?.views?.length}</span>
-                    </span>
+                    
                 </div>
                 <span className='text-base text-blue'>
                     {user?. verified ? "Verified" : "Not Verified"}
