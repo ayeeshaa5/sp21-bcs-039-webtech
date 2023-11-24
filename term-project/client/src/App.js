@@ -13,11 +13,11 @@ import {Outlet, Navigate, Route, Routes, useLocation} from 'react-router-dom';
 function Layout() {
   const {user} = useSelector(state=> state.user)
   const location = useLocation();
-  console.log(user);
+ 
   return user?.token ? (
     <Outlet />
   ) : (
-    <Navigate to="/Login" state={{from: location}} replace />
+    <Navigate to="/Home" state={{from: location}} replace />
   );
   
 }

@@ -14,6 +14,10 @@ const userSlice = createSlice({
             state.user = action.payload;
             localStorage.setItem("user", JSON.stringify(action.payload));
         },
+        logout(state, action) {
+            state.user = null;
+            localStorage.removeItem("user");
+        },
         updateProfile (state, action) {
             state.edit = action.payload;
         },
@@ -27,11 +31,19 @@ export function UserLogin(user) {
     };
 }
 
-export function Logout(){
+// export function Logout(){
+//     return (dispatch, getState) => {
+//         dispatch(userSlice.actions.logout());
+//     };
+// }
+// In userSlice.js
+export function Logout() {
     return (dispatch, getState) => {
+        console.log('Logout action dispatched');
         dispatch(userSlice.actions.logout());
     };
 }
+
 
 export function UpdateProfile(val){
     return (dispatch, getState) => {
