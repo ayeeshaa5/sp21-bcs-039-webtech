@@ -97,6 +97,7 @@ export const friends = [
     firstName: "John",
     lastName: "Bruce",
     email: "john@gmail.com",
+    
     profileUrl:
       "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874470/cld-sample.jpg",
   },

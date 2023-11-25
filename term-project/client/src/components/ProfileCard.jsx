@@ -42,7 +42,8 @@ const ProfileCard = ({user}) => {
                         size={22}
                         className='text-blue cursor-pointer '
                         onClick={()=> dispatch(UpdateProfile(true))}
-                        />): (
+                        />): 
+                        (
                             <button className='bg-[#0444a430] text-sm text-white p-1 rounded'
                             // onClick={()=> sendFriendRequest(data.token, user._id)}
                             >
@@ -74,7 +75,7 @@ const ProfileCard = ({user}) => {
                 <span className='text-base text-blue'>
                     {user?. verified ? "Verified" : "Not Verified"}
                 </span>
-                <div className='flex items-center justify-between '>
+                <div className='flex items-center justify-between text-md text-ascent-1 pb-2 border-b border-[#66666645] '>
                     <span className='text-ascent-2' >
                         Joined
                     </span>
