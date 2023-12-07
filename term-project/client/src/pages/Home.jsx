@@ -257,7 +257,7 @@ containerStyles='bg-[#0444a4] text-xs text-white px-1.5 py-1 rounded-full'
 
             </div>
             
-           <EditProfile/>
+           {/* <EditProfile/> */}
            </>
     )
     }

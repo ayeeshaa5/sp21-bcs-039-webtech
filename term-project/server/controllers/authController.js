@@ -1,8 +1,10 @@
-
-import { hash } from 'bcryptjs';
-import Users from '../models/usersModel.js';
+// import Users from '../models/usersModel.js';
+import Users from '../models/userModel.js';
 import { compareString, createJWT, hashString } from '../utils/index.js';
 import { sendVerificationEmail } from '../utils/sendEmail.js';
+import bcrypt from 'bcryptjs';
+const hash = bcrypt.hash;
+
 
 
 export const register = async (req, res, next) => {
