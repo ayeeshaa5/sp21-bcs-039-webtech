@@ -12,8 +12,13 @@ export const compareString = async (usePassword, password) => {
     return isMatch;
 };
 
-export function createJWT (id){
-    return JWT.sign({userId:id}, process.env.JWT_SECRET, {
-        expiresIn: '1d'
+// export function createJWT (id){
+//     return JWT.sign({userId:id}, process.env.JWT_SECRET, {
+//         expiresIn: '1d'
+//     });
+// }
+export function createJWT(id) {
+    return JWT.sign({ userId: id }, process.env.JWT_SECRET, {
+      expiresIn: '1d'
     });
-}
+  }

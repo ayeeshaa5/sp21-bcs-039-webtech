@@ -12,5 +12,5 @@ const passwordResetSchema = Schema(
     
 );
 
-const PasswordReset  = mongoose.model("PasswordReset", commentSchema);
+const PasswordReset  = mongoose.model("PasswordReset", passwordResetSchema);
 export default PasswordReset;
