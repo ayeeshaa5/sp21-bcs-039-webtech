@@ -9,9 +9,22 @@ const __dirname = path.resolve(path.dirname(""));
 router.get("/verify/:userId/:token", verifyEmail);
 
 //Password reaset
+// router.post("/reset-password", resetPassword);
+router.post("/request-passwordreset", requestPasswordReset);
 router.get("/reset-password/:userId/:token", resetPassword);
-router.post("/request-passwordreset", requestPasswordReset)
-router.post("/reset-password", changePassword)
+ router.post("/reset-password", changePassword);
+
+//  router.post("/reset-password", async (req, res) => {
+//     const { type, id } = req.query;
+
+//     if (type === 'reset') {
+//         // Call the function to reset the password
+//         await resetPassword(req, res);
+//     } else {
+//         // Call the function to change the password
+//         await changePassword(req, res);
+//     }
+// });
 
 
 

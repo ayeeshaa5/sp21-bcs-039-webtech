@@ -4,6 +4,7 @@ import { compareString } from "../utils/index.js";
 import Users from "../models/userModel.js";
 import PasswordReset from "../models/PasswordReset.js";
 import { resetPasswordLink } from "../utils/sendEmail.js";
+import { hashString } from "../utils/index.js";
 
 export const verifyEmail = async (req, res) => {  
     const {userId, token}= req.params;
@@ -157,7 +158,7 @@ export const resetPassword= async (req, res) => {
 
 export const changePassword = async (req, res) => {
     try{
-        const {userId, password} = req.body;
+        const {userId, password} = req.params || req.body;
 
         const hashedpassword = await hashString(password);
 
@@ -168,13 +169,17 @@ export const changePassword = async (req, res) => {
         if(user){
             await PasswordReset.findOneAndDelete({userId});
             const message = "password successfully reset.";
+            console.log('Password successfully changed.');
             res.redirect(
                 `/users/resetpassword?status=success&message=${message}`
                 );
             return;
         }}
+        
+
     catch(error){
         console.log(err);
+        console.error('Error in changePassword handler:', error);
         res.status(404).json({message:error.message})
     }
 
